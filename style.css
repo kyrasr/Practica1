@@ -1,0 +1,42 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+h1::first-letter{
+    font-size: 3.5em;
+    color: black;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+td.enc:hover{
+    background-color: yellow;
+    color: red;
+}
+p.tex::first-line{
+    color: red;
+}
+a{
+    background-color: white;
+}
+h4{
+    counter-reset: cuenta-ciclos;
+}
+p.num::before{
+    content: counter(cuenta-ciclos) ". ";
+    counter-increment: cuenta-ciclos;
+}
+img{
+    float: right;
+    width: 25em;
+}
